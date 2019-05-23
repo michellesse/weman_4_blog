@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+    <title>  Website Page Title jajaja</title>
+        <script type="text/javascript">
+            function dibuja() {
+            let cont = document.getElementById('cont_comentarios');
+            for(let i = 0; i < 7; i++) {
+                let nvoComment = '<div class="comentario" id="com'+i+'">'+
+            
+               '<div class="comentario_hdr">'+
+                   '<h3 id="titulo_'+i+'">' + 'Entrada de noticias ' + i +'</h3>'+
+                    '<p id="autor">'+i+'</p>'+
+                '</div>'+
+                `<div id="contenido" class="comentario_cont">${i}</div}`+
+                '<img src="./ejemplo.jpg" alt="imagen de ejemplo" />'+
+                '</div>';
+                            cont.innerHTML += nvoComment;
+            }
+            }
+            function inicia() {
+                dibuja();
+            }
+        </script>
+        
+    <head>
+        <div class= "header" >  
+            <img src="./logo_tex_sinfondo.png" style="float= left; margin: 0px 0px 0px 0px;" alt="Logo WemanConnect" width="45%"/>
+            <img src="./user.png" style="float: right; margin: 4% 2% 0% 0%;"  alt="Acceso a perfil"  width="4%"  />
+            <img src="./round-add-button.png" style="float: right; margin: 4% 3% 0% 0%;" alt="Agregar comentario" width="4%" />
+            
+                             
+            </div> 
+        </div>
+    </head>
+        
+    <body onload="inicia()">
+            <div id="cont_comentarios">
+
+            </div>
+    </body>
+</html>
