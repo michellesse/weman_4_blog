@@ -1,29 +1,89 @@
+
 body {
-    background-color: #fafafa;
+    line-height: 1;
+    background-color: #f5f9ff;
     font-family: "Arial";
 }
 
+h2 {
+    font-size: 24px;
+}
+
+ .imagenFancy { 
+   /* margin-bottom: 10%; */
+   flex-wrap: wrap;
+   margin-top: 2%
+} 
+
 .header {
     /* margin-top: 0%;
-    margin-bottom: 8%;
     margin-left: 0% */
     /* float: left; */
     /* padding-bottom: 0px;  */
+    margin-bottom: 5%;
     background-image: linear-gradient(180deg, #EBDBFF 0%, #D2B3FF 100%);
-    vertical-align: center;
-    /* display : flex; */
-    flex-wrap: wrap;
+    align-items: center;
+    display : flex;
+    /* flex-wrap: wrap; */
     width: 100%;
+    justify-content: space-between;
+}
+
+.LogoH {
+    margin-left: 2.1%;
+    /* align-self: center; */
+    
+}
+.Nav {
+    margin-right: 1.5%
+}
+
+.fecha {
+    font-size: 14px;
+    text-align: right;
+    color: #cbcbcb;
+}
+
+
+.comentarios {
+    width: 90%;
+    margin-left: 2.3%;
+    /* width: 894px;
+    height: 80px; */
+    /* font-family: Roboto; */
+    font-size: 18px;
+    line-height: 1.33;
+    color: #7c7d8d;
+}
+
+.autorFancy {
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: #9162d1;
 }
 
 #cont_comentarios {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    margin-left: 0% ;
-    margin-right: 0%;
-    padding: 100px
+    margin-left: 7% ;
+    margin-right: 7%;
+    /*padding: 3%; */
+    /* height: 208px;
+    width: 1376px; */
+   /* flex-wrap: wrap; */
+    /* width: 100%; */
+    /* box-sizing: content-box;  */   
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.07);
+    background-color: #ffffff;
+    /* margin: 2%; */
+    display: flex;
+    justify-content: right;
+    padding: 30px; 
     
 }
+
+.imagenFancy {
+    margin-left: 2.3%;
+ }
 
 /* h1.text {
     text-align: bottom;

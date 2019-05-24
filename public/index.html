@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     
     <title>  Website Page Title jajaja</title>
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             function dibuja() {
             let cont = document.getElementById('cont_comentarios');
             for(let i = 0; i < 7; i++) {
@@ -25,22 +25,56 @@
             function inicia() {
                 dibuja();
             }
-        </script>
+        </script> -->
         
     <head>
         <div class= "header" >  
-            <img src="./logo_tex_sinfondo.png" style="float= left; margin: 0px 0px 0px 0px;" alt="Logo WemanConnect" width="45%"/>
-            <img src="./user.png" style="float: right; margin: 4% 2% 0% 0%;"  alt="Acceso a perfil"  width="4%"  />
-            <img src="./round-add-button.png" style="float: right; margin: 4% 3% 0% 0%;" alt="Agregar comentario" width="4%" />
-            
-                             
-            </div> 
-        </div>
+            <div class="LogoH">
+                    <img src="./logo_tex_sinfondo.png" alt="Logo WemanConnect" />
+            </div>
+            <div class="Nav">
+                <img id= "btnComent" src="./round-add-button.png" alt="Agregar comentario" />   
+                <img id= "btnUser" src="./user.png" alt="Acceso a perfil"  />
+                    
+            </div>
+                         
+        </div> 
     </head>
         
     <body onload="inicia()">
-            <div id="cont_comentarios">
-
+            <div id="cont_comentarios" >
+                <div class="comentarios" >
+                    <h2 class="tituloFancy">Esto es una noticia</h2>
+                    <p class="fecha">15:38 - 23 de Mayo de 2019</p>
+                    <p class="comentarioFancy" >No lo lograremos y ese es mi comentario No lo lograremos y ese es mi comentario 
+                        No lo lograremos y ese es mi comentario No lo lograremos y ese es mi comentario No lo lograremos y ese es mi
+                         comentario No lo lograremos y ese es mi comentario No lo lograremos y ese es mi comentario No lo lograremos y 
+                         ese es mi comentario No lo lograremos y ese es mi comentario No lo lograremos y ese es mi comentario No lo 
+                         lograremos y ese es mi comentario No lo lograremos y ese es mi comentario No lo lograremos y ese es mi comentario
+                         </p>
+                    <p class="autorFancy" >Brenda Michelle</p>
+                </div>
+                <div class="imagenFancy">
+                    <img src="./Gato_Guapo2.jpeg" alt="Gatita carey juzgadote" height="200px" />   
+                </div>
             </div>
+                <!-- <div class="imagenFancy"   >
+                        <img class= "imagenes" src="./Gato_Guapo2.jpeg" alt="Gatita carey juzgadote " width="30%"/>
+                </div> -->
+                
+                <!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+            
     </body>
 </html>
