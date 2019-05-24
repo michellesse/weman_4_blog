@@ -6,7 +6,7 @@ const fs = require('fs');
 const pubs = require('../middlewares/publicaciones.js');
 const seg = require('../middlewares/cancervero.js');
 
-/** Ruta: /
+/** Ruta: /comentarios
  * @brief Obtiene por default el index.html de la aplicación
  */
 router.get('/', (pet, resp) => {
@@ -22,7 +22,7 @@ router.get('/', (pet, resp) => {
 router.get('/comentarios', (pet, resp) => {
 	//Aquí vamos a enviar los comentarios en formato JSON. Lo haremos de manera asíncrona.
 	//Esperar el asíncrono...
-	pubs.leePublicaciones(resp);
+	pubs.leerComentarios(resp);
 	/*
 	console.log("Termina la ejecución de la función y dijo: ");
 	console.log(res);
@@ -43,9 +43,12 @@ router.post('/login', (pet, resp) => {
 /** Ruta: /publica
  * @brief Publica un comentario en la base de datos.
  * @ref middlewares/publicaciones.js
+ permite hacer publicaciones al blog
  */
 router.post('/publica', (pet, resp) => {
 	pubs.publica(pet.body.idusr, pet.body.titulo, pet.body.texto, resp);
 });
+
+
 
 module.exports = router;

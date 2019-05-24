@@ -59,6 +59,6 @@ const pub = (idusr, titulo, txt, resp) => {
 };
 
 module.exports = {
-	leePublicaciones: (resp) => dameListado(resp),
+	leerComentarios: (resp) => dameListado(resp),
 	publica: (idusr, titulo, texto, resp) => pub(idusr, titulo, texto, resp)
 }
