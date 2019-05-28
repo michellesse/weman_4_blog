@@ -35,8 +35,8 @@
                     <img src="./logo_tex_sinfondo.png" alt="Logo WemanConnect" />
             </div>
             <div class="Nav">
-                <img id= "btnComment" src="./round-add-button.png" alt="Agregar comentario" />   
-                <img id= "btnUser" src="./user.png" alt="Acceso a perfil"  />
+                <img id= "btnComment" src="./round-add-button.png" alt="Agregar comentario" onclick="btnComentario()"/>   
+                <img id= "btnUser" src="./user.png" alt="Acceso a perfil" onclick="btnUsuario()" />
                     
             </div>
                          
@@ -69,17 +69,19 @@
                     <span class="closeU">&times;</span>
                     <h2>Sign in</h2>
             </div>
-        <form action="">
+        <form id="frmLogin" action="./login" method="POST" onSubmit="return validarCorreo();">
           <div class="modal-body"> 
-          <p> Email<p> <br/>
-            <input type="text" class="email" placeholder="Email" ></p>
+          <p> Nombre de Usuario<p> <br/>
+            <input id="correoelectronico" type="text" name="usr" placeholder="Nombre del Usuario" required /></p>
             <p>Contraseña</p>
-            <input type="text" class="contraseña" placeholder="Contraseña"></p>
+            <input id="contras" type="password" name="pwd" class="contraseña" placeholder="Contraseña" required ></p>
+            <button type="submit" onclick="doPrueba()">Ingresar</button>
+
           </div>
         </form>
   </div>
 </div>
-      <script>
+      <!-- <script>
             // Get the modal
             var modalU = document.getElementById("myModalU");
             
@@ -105,7 +107,7 @@
                 modalU.style.display = "none";
               }
             }
-            </script>
+            </script> -->
 <!-- The Modal -->
 <div id="myModalC" class="modalC">
 
@@ -115,17 +117,18 @@
                       <span class="closeC">&times;</span>
                       <h2>Publicar entrada nueva</h2>
               </div>
-              <form action="">
+              <form method="post" action="./publica">
                 <div class="modal-bodyC">
                 <p>Titulo de la entrada</p> 
                 <input type="text" class="titcoment" placeholder="Titulo" >
                 <p>Contenido</p>
                 <textarea id="txtcomentario" class="contcoment" type="text"  placeholder="Comentario" > </textarea>
+                <button type="submit">Listo</button>
             </div>
             </form>
         </div>
       </div>
-            <script>
+            <!-- <script>
                   // Get the modal
                   var modalC = document.getElementById("myModalC");
                   
@@ -151,5 +154,5 @@
                       modalC.style.display = "none";
                     }
                   }
-                  </script>
+                  </script> -->
     </html>
